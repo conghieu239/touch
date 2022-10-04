@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -117,7 +117,7 @@ namespace touch
                         Array[i, j] = " ";
                         if (kt1 == true) dem = dem + 1;
                         kt1 = false;
-                        if (dem % Level == 0) { kt = true; dem++; if (dem == 20 * Level && Level > 2) Level--; }
+                        if (dem % Level == 0) { kt = true; if (dem == 20 * Level && Level > 2) Level--; dem++;}
                     }
                     else if (i == 29 && Array[i,j] != " ") { Array[i, j] = " ";  diem--; }
                 }
